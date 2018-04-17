@@ -3,7 +3,7 @@ const sHost = 'localhost';
 const nPort = 8000;
 
 function start() {
- function onRequest(req, res) {
+function onRequest(req, res) {
  console.log('Request received.');
  res.writeHead(200, { 'Content-Type': 'text/html' });
  res.write('Hello World!');
