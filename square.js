@@ -1,6 +1,6 @@
 module.exports = function () {
     return {
-        area: function () {
+        area : function () {
             return width * width;
         }
     };
