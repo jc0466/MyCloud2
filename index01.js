@@ -1,8 +1,8 @@
 let nPort = 8000;
 let sHost = 'localhost';
-const myServer = require('./myServer');
-const myRouter = require('./myRouter');
-const myHandling = require('./myHandling2');
+const myServer = require('./myServer4');
+const myRouter = require('./myRouter2');
+const myHandling = require('./myHandling3');
 
 let handle ={};
 handle['/']= myHandling.start;
