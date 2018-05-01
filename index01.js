@@ -2,7 +2,7 @@ let nPort = 8000;
 let sHost = 'localhost';
 const myServer = require('./myServer');
 const myRouter = require('./myRouter');
-const myHandling = require('./myHandling');
+const myHandling = require('./myHandling2');
 
 let handle ={};
 handle['/']= myHandling.start;

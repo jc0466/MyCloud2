@@ -10,7 +10,7 @@ function start(res) {
  // Non-blocking function
     setTimeout(function () {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('Hello Start!');
+        res.write('Hello, hello!');
         res.end();
     }, 10000);    // 10초 기다리고 callback 실행
 }
