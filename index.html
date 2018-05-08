@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta charset="UTF-8"/>
+</head>
+    <body>
+            <div id ="app">
+                This is a test.
+                <!--Vue.js domain-->
+                <br>
+                {{ message + '1234'}}
+                <br>
+                <span :title="date">마우스를 가까이 가져오세요.</span> 
+                <span v-else>볼수없다.</span>
+                <br> 내가 공부하고 싶은 언어
+                <ul>
+                    <li v-for="todo in todos">{{todo.text}}</li>
+                </ul>
+                
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <script>
+                const myapp = new Vue({
+                    el: '#app',
+                    data: {message: 'Cloud!',
+                    data: '오늘날짜:' + new Date().toLocaleString(),
+                    seen: true,
+                    todos: [
+                        {text: 'JavaScript'},
+                        {text: 'Node.js'},
+                        {text: 'Vue.js'},
+                        {text: 'nuxt.js'}
+                    ]
+                    }
+                });
+            </script>
+    </body>
+
+
+
+
+
+
+</html>
